@@ -16,11 +16,7 @@ public class MainApp {
         main.run(args);*/
         
         System.out.println("Hi Maven");
-        System.out.println("Test");
-        System.out.println("Hi Maven");
-        System.out.println("Hi Maven");
-        System.out.println("Hi Maven");
-        System.out.println("Hi Maven 6");
+
     }
 
 }
