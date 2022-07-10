@@ -23,8 +23,8 @@
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
 .idea/**/*.xml
-.idea/src/resources
-.idea/src/data
+.idea/**/resources/*.properties
+.idea/**/data/*.xml
 
 # Gradle
 .idea/**/gradle.xml
