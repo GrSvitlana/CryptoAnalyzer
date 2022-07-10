@@ -9,5 +9,8 @@ public class Constants {
 	private static final String symbol = "§!@#$%ˆ&*/+-()_={}[]|<>'";
 	
 	public static final String ALPHABET = latin + latin.toLowerCase() + cyrillic + cyrillic.toLowerCase() + number + symbol;
-	public static final String TXT_FOLDER = System.getProperty("user.dir") + File.separator + "text" + File.separator;
+	public static final String TXT_FOLDER = System.getProperty("user.dir") +
+			File.separator +
+			"text" +
+			File.separator;
 }
