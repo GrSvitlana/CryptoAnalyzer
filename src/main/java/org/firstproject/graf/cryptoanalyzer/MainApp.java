@@ -6,8 +6,9 @@ public class MainApp {
 	
 	public static void main(String... args) throws Exception {
 		
-		Application application = new Application(args);
-		Resulte resulte = application.run();
+		Application application = new Application();
+		Resulte resulte = application.run(args);
+		System.out.println(resulte);
 	}
 	
 }
