@@ -2,7 +2,7 @@ package org.firstproject.graf.cryptoanalyzer;
 
 import org.firstproject.graf.cryptoanalyzer.controllers.MainController;
 import org.firstproject.graf.cryptoanalyzer.entity.Resulte;
-import org.firstproject.graf.exceptions.AppException;
+import org.firstproject.graf.cryptoanalyzer.exceptions.AppException;
 
 import java.util.Arrays;
 

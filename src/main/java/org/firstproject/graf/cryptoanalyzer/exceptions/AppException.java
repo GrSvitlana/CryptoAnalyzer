@@ -1,4 +1,4 @@
-package org.firstproject.graf.exceptions;
+package org.firstproject.graf.cryptoanalyzer.exceptions;
 
 public class AppException extends RuntimeException {
 
