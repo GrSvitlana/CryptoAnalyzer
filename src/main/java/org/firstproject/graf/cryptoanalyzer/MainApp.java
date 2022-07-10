@@ -1,23 +1,18 @@
 package org.firstproject.graf.cryptoanalyzer;
 
-import org.apache.camel.main.Main;
+import org.firstproject.graf.cryptoanalyzer.entity.Resulte;
 
-/**
- * A Camel Application
- */
 public class MainApp {
-
-    /**
-     * A main() so we can easily run these routing rules in our IDE
-     */
-    public static void main(String... args) throws Exception {
-        /*Main main = new Main();
-        main.configure().addRoutesBuilder(new MyRouteBuilder());
-        main.run(args);*/
-        
-        System.out.println("Hi Maven");
-
-    }
-
+	
+	public static void main(String... args) throws Exception {
+		
+		Application application = new Application(args);
+		Resulte resulte = application.run();
+	}
+	
 }
-
+		
+		/*int key = 123; // <<< args
+		String encrypt = "Java is a high-level, class-based, object-oriented programming language that is designed" +
+				" to have as few implementation dependencies as possible."; // <<< args
+		String decrypt = ""; // <<< args*/
