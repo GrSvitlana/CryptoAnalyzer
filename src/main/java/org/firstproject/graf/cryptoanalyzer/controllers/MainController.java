@@ -4,7 +4,7 @@ import org.firstproject.graf.cryptoanalyzer.entity.Resulte;
 
 public class MainController {
 	
-	public Resulte doAction(String[] args) {
+	public Resulte doAction(String action, String[] parameters) {
 		return null;
 	}
 }
