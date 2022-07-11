@@ -1,8 +1,8 @@
 package org.firstproject.graf.cryptoanalyzer.commands;
 
-import org.firstproject.graf.cryptoanalyzer.entity.Resulte;
+import org.firstproject.graf.cryptoanalyzer.entity.Result;
 
 public interface Action {
-	Resulte execute(String[] parameters);
+	Result execute(String[] parameters);
 	
 }

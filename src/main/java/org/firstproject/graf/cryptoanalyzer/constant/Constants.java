@@ -1,4 +1,4 @@
-package org.firstproject.graf.cryptoanalyzer.constants;
+package org.firstproject.graf.cryptoanalyzer.constant;
 
 import java.io.File;
 

@@ -1,11 +1,11 @@
 package org.firstproject.graf.cryptoanalyzer.commands;
 
-import org.firstproject.graf.cryptoanalyzer.entity.Resulte;
+import org.firstproject.graf.cryptoanalyzer.entity.Result;
 
 public class Decrypt implements Action {
 	
 	@Override
-	public Resulte execute(String[] parameters) {
+	public Result execute(String[] parameters) {
 		return null;
 	}
 }

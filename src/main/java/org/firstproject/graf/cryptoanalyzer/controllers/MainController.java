@@ -1,6 +1,7 @@
 package org.firstproject.graf.cryptoanalyzer.controllers;
 
-import org.firstproject.graf.cryptoanalyzer.entity.Resulte;
+import org.firstproject.graf.cryptoanalyzer.commands.Action;
+import org.firstproject.graf.cryptoanalyzer.entity.Result;
 
 public class MainController {
 	
@@ -8,7 +9,9 @@ public class MainController {
 		return null;
 	}*/
 	
-	public Resulte execute(String action, String[] parameters) {
-		throw new UnsupportedOperationException();
+	public Result execute (String command, String[] parameters) {
+		Action action = Actions.find(command);
+		Result result = action.execute(parameters);
+		return result;
 	}
 }

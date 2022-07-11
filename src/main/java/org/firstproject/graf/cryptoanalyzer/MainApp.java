@@ -1,24 +1,21 @@
 package org.firstproject.graf.cryptoanalyzer;
 
-import org.firstproject.graf.cryptoanalyzer.constants.Constants;
+import org.firstproject.graf.cryptoanalyzer.app.Application;
+import org.firstproject.graf.cryptoanalyzer.constant.Constants;
 import org.firstproject.graf.cryptoanalyzer.controllers.MainController;
-import org.firstproject.graf.cryptoanalyzer.entity.Resulte;
+import org.firstproject.graf.cryptoanalyzer.entity.Result;
 
 public class MainApp {
 	
 	public static void main(String... args) throws Exception {
 		
 		MainController mainController = new MainController();
+		// encode text.txt encoded.txt 45
 		Application application = new Application(mainController);
-		Resulte resulte = application.run(args);
-		System.out.println(resulte);
+		Result result = application.run(args);
+		System.out.println(result);
 		String txtFolder = Constants.TXT_FOLDER;
 		System.out.println(txtFolder);
 	}
 	
 }
-		
-		/*int key = 123; // <<< args
-		String encrypt = "Java is a high-level, class-based, object-oriented programming language that is designed" +
-				" to have as few implementation dependencies as possible."; // <<< args
-		String decrypt = ""; // <<< args*/
