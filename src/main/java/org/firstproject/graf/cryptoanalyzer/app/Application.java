@@ -15,8 +15,8 @@ public class Application {
 	
 	public Result run(String[] args) {
 		// encode text.txt encoded.txt 45
-			String action = args[0];
+			String command = args[0];
 			String[] parameters = Arrays.copyOfRange(args, 1, args.length); // encode text.txt encoded.txt 45
-			return mainController.execute(action, parameters);
+			return mainController.execute(command, parameters);
 	}
 }

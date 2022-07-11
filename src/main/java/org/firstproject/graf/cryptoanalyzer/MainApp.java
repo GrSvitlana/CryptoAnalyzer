@@ -7,10 +7,10 @@ import org.firstproject.graf.cryptoanalyzer.entity.Result;
 
 public class MainApp {
 	
-	public static void main(String... args) throws Exception {
+	public static void main(String[] args) throws Exception {
 		
 		MainController mainController = new MainController();
-		// encode text.txt encoded.txt 45
+		// TODO encode text.txt encoded.txt 45
 		Application application = new Application(mainController);
 		Result result = application.run(args);
 		System.out.println(result);
