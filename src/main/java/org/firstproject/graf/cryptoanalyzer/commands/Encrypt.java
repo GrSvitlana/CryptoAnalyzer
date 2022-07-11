@@ -23,7 +23,7 @@ public class Encrypt implements Action {
 			List<String> strings = Files.readAllLines(path);
 			for (String string : strings) {
 				
-				System.out.println(string);
+				System.out.println(string.length());
 			}
 		} catch (IOException e) {
 			throw new AppException("Not found", e);
