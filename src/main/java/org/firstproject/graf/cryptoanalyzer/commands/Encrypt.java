@@ -16,17 +16,19 @@ public class Encrypt implements Action {
 	public Result execute(String[] parameters) {
 		
 		String txtFile = parameters[0];
-		String encryptedFiel = parameters[0];
+		String encryptedFiel = parameters[1];
+		int key = Integer.parseInt(parameters[2]);
 		Path path = Path.of(PathFinder.getRoot() + txtFile);
 		try {
 			List<String> strings = Files.readAllLines(path);
 			for (String string : strings) {
+				
 				System.out.println(string);
 			}
 		} catch (IOException e) {
 			throw new AppException("Not found", e);
 		}
-		return new Result(ResultCode.OK, "read all bytes " + path);
+		return new Result(ResultCode.OK, "all bytes read" + path);
 
 	}
 }

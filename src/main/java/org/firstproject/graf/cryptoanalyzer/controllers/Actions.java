@@ -1,5 +1,6 @@
 package org.firstproject.graf.cryptoanalyzer.controllers;
 
+
 import org.firstproject.graf.cryptoanalyzer.commands.Action;
 import org.firstproject.graf.cryptoanalyzer.commands.Decrypt;
 import org.firstproject.graf.cryptoanalyzer.commands.Encrypt;

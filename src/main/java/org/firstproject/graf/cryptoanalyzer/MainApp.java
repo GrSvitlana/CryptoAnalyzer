@@ -10,7 +10,7 @@ public class MainApp {
 	public static void main(String[] args) throws Exception {
 		
 		MainController mainController = new MainController();
-		// TODO encode text.txt encoded.txt 45
+		// TODO encrypt text.txt encoded.txt 45
 		Application application = new Application(mainController);
 		Result result = application.run(args);
 		System.out.println(result);
