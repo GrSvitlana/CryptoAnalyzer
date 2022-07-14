@@ -5,6 +5,8 @@ import org.firstproject.graf.cryptoanalyzer.entity.Result;
 import org.firstproject.graf.cryptoanalyzer.entity.ResultCode;
 import org.firstproject.graf.cryptoanalyzer.exception.AppException;
 
+import java.io.IOException;
+
 public class MainController {
 	
 	public Result execute(String command, String[] parameters) {
@@ -14,6 +16,8 @@ public class MainController {
 		} catch (AppException e) {
 			//TODO log file for exception
 			return new Result(ResultCode.ERROR, e.getMessage());
+		} catch (IOException e) {
+			throw new RuntimeException(e);
 		}
-		}
+	}
 	}
