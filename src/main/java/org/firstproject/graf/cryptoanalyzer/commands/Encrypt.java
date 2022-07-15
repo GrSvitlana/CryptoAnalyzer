@@ -5,16 +5,10 @@ import org.firstproject.graf.cryptoanalyzer.entity.ResultCode;
 import org.firstproject.graf.cryptoanalyzer.exception.AppException;
 import org.firstproject.graf.cryptoanalyzer.util.PathFinder;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.PrintStream;
-import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Collections;
-import java.util.List;
 
 import static org.firstproject.graf.cryptoanalyzer.constant.Constants.ALPHABET;
 
@@ -35,7 +29,7 @@ public class Encrypt implements Action {
 			for (int i = 0; i < strings.length(); i++) {
 				
 				int index = ALPHABET.indexOf(strings.charAt(Integer.parseInt(String.valueOf(i))));
-				int newIndex = (key + index) % ALPHABET.length();
+				int newIndex = (ALPHABET.length() + index + key) % ALPHABET.length();
 				char replaceChar = ALPHABET.charAt(newIndex);
 				encrypted += replaceChar;
 			}
