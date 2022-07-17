@@ -19,15 +19,13 @@ public class Encrypt implements Action {
 		
 		String txtFile = parameters[0];
 		String encryptedFile = parameters[1];
-		String encrypted = "";
 		int key = Integer.parseInt(parameters[2]);
+		String encrypted = "";
 		Path path = Path.of(PathFinder.getRoot() + txtFile);
 		
 		try {
 			String strings = String.valueOf(Files.readAllLines(path));
-			
 			for (int i = 0; i < strings.length(); i++) {
-				
 				int index = ALPHABET.indexOf(strings.charAt(Integer.parseInt(String.valueOf(i))));
 				int newIndex = (ALPHABET.length() + index + key) % ALPHABET.length();
 				char replaceChar = ALPHABET.charAt(newIndex);
@@ -39,7 +37,7 @@ public class Encrypt implements Action {
 		} catch (IOException e) {
 			throw new AppException("Not found", e);
 		}
-
+		
 		return new Result(ResultCode.OK, "all bytes read" + path);
 	}
 }

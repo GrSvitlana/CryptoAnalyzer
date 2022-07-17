@@ -2,13 +2,15 @@ package org.firstproject.graf.cryptoanalyzer.controllers;
 
 
 import org.firstproject.graf.cryptoanalyzer.commands.Action;
+import org.firstproject.graf.cryptoanalyzer.commands.BruteForce;
 import org.firstproject.graf.cryptoanalyzer.commands.Decrypt;
 import org.firstproject.graf.cryptoanalyzer.commands.Encrypt;
 
 public enum Actions {
 	
 	ENCRYPT(new Encrypt()),
-	DECRYPT(new Decrypt());
+	DECRYPT(new Decrypt()),
+	BRUTEFORCE(new BruteForce());
 	
 	private final Action action;
 	

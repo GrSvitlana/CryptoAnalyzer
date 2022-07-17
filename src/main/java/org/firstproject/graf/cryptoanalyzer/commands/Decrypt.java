@@ -19,15 +19,13 @@ public class Decrypt implements Action {
 		
 		String encryptedFile = parameters[0];
 		String decryptedFile = parameters[1];
-		String decrypted = "";
 		int key = Integer.parseInt(parameters[2]);
+		String decrypted = "";
 		Path path = Path.of(PathFinder.getRoot() + encryptedFile);
 		
 		try {
 			String strings = String.valueOf(Files.readAllLines(path));
-			
 			for (int i = 0; i < strings.length(); i++) {
-				
 				int index = ALPHABET.indexOf(strings.charAt(Integer.parseInt(String.valueOf(i))));
 				int newIndex = (ALPHABET.length() + index - key) % ALPHABET.length();
 				if (newIndex < 0) {
